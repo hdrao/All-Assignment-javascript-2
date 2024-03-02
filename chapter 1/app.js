@@ -1,0 +1,1 @@
+alert("Hello, welcome to the first assignment of JS ")
