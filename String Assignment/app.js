@@ -126,3 +126,38 @@ console.log("Number of vowels in the string", count.vowels);
 console.log("number of consonants in the string", count.consonants);
 
 });
+
+
+let rmcDp = document.querySelector(".buttonSix")
+
+rmcDp.addEventListener("click", function () {
+
+function removeDup(str) {
+    let uniqueStr = new Set ();
+
+    for (let char of str) {
+        uniqueStr.add(char);
+    }
+    return [...uniqueStr].join ('');
+}
+
+let mystring = removeDup(prompt("Enter a string"));
+
+console.log(mystring);
+
+});
+
+
+
+document.querySelector(".buttonSeven").addEventListener("click", function () {
+function extractNumbers (str) {
+    let numbers = str.match(/\d+/g);
+    return numbers ? numbers.join('') : "Not found any number"
+}
+
+let mysring = extractNumbers(prompt("Enter a number"));
+
+console.log(mysring);
+
+});
+
