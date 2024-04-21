@@ -32,8 +32,9 @@ function countSpecific (str,counter) {
 }
 
 
-const inputString = "Count specific character in the string converted to uppercase without using built-in property in js.";
-console.log(countSpecific(inputString, 't')); // Output: 3
+const inputString = prompt("Enter a string");
+const charecter = prompt("Enter the character that you want to count");
+console.log(countSpecific(inputString, charecter)); // Output: 3
 
 });
 
@@ -73,7 +74,6 @@ for (let i=0; i < words.length; i++) {
     let firstLetter=words[i].charAt(0).toUpperCase();
 
     words[i] = firstLetter + words[i].slice(1);
-    console.log(words[i]);
 }
 
 
