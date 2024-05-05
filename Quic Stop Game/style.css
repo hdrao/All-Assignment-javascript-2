@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#input{
+    width: 400px;
+    height: 50px;
+    border: solid saddlebrown;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 10px;   
+}
+
+.buttons button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(186, 138, 230);
+    color: white;
+    cursor: pointer;
+}
+
+
+.counting{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(132, 45, 214);
+}
+
+
+.buttons button:hover{
+    background-color: rgb(132, 45, 214);
+    color: white;
+}
+
+
+.result{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
