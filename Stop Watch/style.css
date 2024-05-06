@@ -1,0 +1,66 @@
+h1{
+    font-size: 60px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714780800&semt=sph);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+} 
+
+.result {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+
+.button{
+    display: flex;
+    gap: 10px;   
+}
+
+.button button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(186, 138, 230);
+    color: white;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: rgb(132, 45, 214);
+    color: white;
+}
+
+
+body{
+    background-color: cornsilk;
+}
