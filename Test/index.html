@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <div class="editor-container">
+        <div class="toolbar">
+            <button onclick="changeFont('bold')"><b>B</b></button>
+            <button onclick="changeFont('italic')"><i>I</i></button>
+            <button onclick="changeFont('underline')"><u>U</u></button>
+            <select onchange="changeFontWithArg('fontSize', this.value)">
+                <option value="1">10px</option>
+                <option value="2">13px</option>
+                <option value="3">16px</option>
+                <option value="4">18px</option>
+                <option value="5">24px</option>
+                <option value="6">32px</option>
+                <option value="7">48px</option>
+            </select>
+            <select onchange="changeFontWithArg('fontName', this.value)">
+                <option value="Arial">Arial</option>
+                <option value="Courier">Courier</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <input type="color" onchange="changeFontWithArg('foreColor', this.value)">
+        </div>
+        <div id="editor" contenteditable="true"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
