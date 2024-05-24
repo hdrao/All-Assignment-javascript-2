@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="box">
+            <div class="total-box" onclick="loaddata()">
+                <h1>Total</h1>
+                <span class="totalSD"></span>
+            </div>
+            <div  class="present-box">
+                <h1>Present</h1>
+                <span class="presentSD">00</span>
+            </div>
+            <div class="absent-box">
+                <h1>Absent</h1>
+                <span class="absentSD">00</span>
+            </div>
+            <div class="leave-box">
+                <h1>Leave</h1>
+                <span class="leaveSD">00</span>
+            </div>
+        </div>
+        <div class="container">
+<table>
+<thead>
+    <tr>
+        <th>S. No</th>
+        <th>Name</th>
+        <th>Father's Name</th>
+        <th>Age</th>
+        <th>Roll No</th>
+        <th>Class</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody class="userData">
+
+</tbody>
+
+<tbody class="newuserData">
+
+</tbody>
+</table>
+</div>
+
+<h2>Today Present Student List</h2>
+
+<!-- <h1 class="list">Today Present Student List</h1> -->
+<div class="container2">
+    
+    <div class="table1 table">
+        <h1>Present List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Age</th>
+                <th>Roll No</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody class="ppuserData">
+        </tbody>
+        </table>
+    </div>
+    <div class="table2 table">
+        <h1>Absent List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Father's Name</th>
+                    <th>Age</th>
+                    <th>Roll No</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody class="apuserData">
+            </tbody>
+            </table>
+        </div>
+        <div class="table3 table">
+            <h1>Leave List</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Father's Name</th>
+                        <th>Age</th>
+                        <th>Roll No</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody class="puserData">
+                </tbody>
+                </table>
+            </div>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
