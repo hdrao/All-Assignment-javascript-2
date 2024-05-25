@@ -3,76 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>All ASSIGNMENTS</title>
 </head>
 
 <style>
 
-.button{
-  gap: 30px;
-  margin: 30px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-button{
-    margin: 10px;
+body{
+    background-image: url(https://i.ytimg.com/vi/Zw6OscHR7lQ/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+} */
+
+marquee {
+    text-transform: uppercase;
+    background: transparent;
+    height: 100%;
+    width: 100%;
     padding: 20px;
-    border-radius: 10px;
+    font-size: xx-large;
+    color: aliceblue;
 }
 
-button:hover{
-    background-color: brown;
+.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cards{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    height: 250px;
+    width: 150px;
+    border: 1px solid black;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px;
+    gap: 25px;
+}
+
+
+.cards:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    translate: x(10px 0 0 0);
+}
+
+
+.button{
+    padding: 10px;
+    border-radius: 25px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f68084;
+}
+
+.button a {
+    text-decoration: none;
     color: white;
-    transition: ease;
-    transition-duration: 0.3s;
+}
+
+.button:hover{
+    color: #f68084;
+    transition: 0.5s;
+    transform: scale(1.1);
+    translate: x(10px 0 0 0);
+}
+
+.cards h3 {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards p {
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 </style>
 
 
 <body>
-      
-    <div class="button">
-        <button id="1stbutton"><a target="_blank" href="chapter 1/index.html">chapter1</a></button>
+
+        <marquee behavior="scroll" direction="logo" scrollamount="20">ASSIGNMENTS are made by Rao Danish</marquee>
+    <!-- <div class="navbar">
+        <div class="logo"><img src="https://i.ytimg.com/vi/Zw6OscHR7lQ/maxresdefault.jpg" alt=""></div>
+        <div class="elements">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Assignments</a></li>
+            </ul>
+        </div>
+    </div> -->
         
-        <button id="2ndbutton"><a target="_blank" href="chapter 2/index.html">chapter2</a></button>
+    <div class="container">
+
+         <div class="firstAss cards" >
+             <h3>chapter1</h3>
+             <p>These are some first chapter in which we did some basic work on js</p>
+             <button class="button"><a target="_blank" href="chapter 1/index.html">chapter1</a></button>
+         </div>
+
+         <div class="firstAss cards" >
+            <h3>chapter2</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="1stbutton" class="button"><a target="_blank" href="chapter 1/index.html">chapter1</a></button>
+        </div>
+        <div class="firstAss cards" >
+            <h3>chapter3</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="email" class="button"><a target="_blank" href="chapter 3/index.html">Chapter3</a></button>
         
-        <button id="email"><a target="_blank" href="chapter 3/index.html">Chapter3</a></button>
+        </div>
+        <div class="firstAss cards" >
+            <h3>chapter4</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="book" class="button"><a target="_blank" href="chapter 4/index.html">chapter4</a></button>
+        </div>
+        <div class="firstAss cards" >
+            <h3>chapter5</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="book" class="button"><a target="_blank" href="chapter 5/index.html">chapter5</a></button>
+        </div>
+        <div class="firstAss cards" >
+            <h3>chapter6</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="book" class="button"><a target="_blank" href="chapter 6/index.html">chapter6</a></button>
+        </div>
+        <div class="firstAss cards" >
+            <h3>chapter7</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="book" class="button"><a target="_blank" href="chapter 7/index.html">chapter7</a></button>
+        </div>
+
+        <div class="firstAss cards" >
+            <h3>chapter8</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="book" class="button"><a target="_blank" href="chapter 8/index.html">chapter8</a></button>
+        </div>
+
+        <div class="firstAss cards" >
+            <h3>chapter9</h3>
+            <p>These are some first chapter in which we did some basic work on js</p>
+            <button id="book" class="button"><a target="_blank" href="chapter 9/index.html">chapter8</a></button>
+        </div>
+
+        <div class="firstAss cards" >
+            <h3>Num Guess</h3>
+            <p>This is the game in which guess the number and win the game</p>
+            <button id="book" class="button"><a target="_blank" href="Number guess/index.html">chapter8</a></button>
+        </div>
+
+        <div class="firstAss cards" >
+            <h3>Clock</h3>
+            <p>The clock is made by javascript and setinterval is use for this</p>
+            <button id="book" class="button"><a target="_blank" href="Clock/index.html">Clock</a></button>
+        </div>
+
         
-        <button id="book"><a target="_blank" href="chapter 4/index.html">chapter4</a></button>
+        <div class="firstAss cards" >
+            <h3>Cowndown</h3>
+            <p>The Coundown is made for Eid by using Date and setinterval </p>
+            <button id="book" class="button"><a target="_blank" href="Coundown for Eid/index.html">Coundown</a></button>
+        </div>
 
-        <button id="book"><a target="_blank" href="chapter 5/index.html">chapter5</a></button>
+            <div class="firstAss cards" >
+                <h3>Stop Watch</h3>
+                <p>The Stop Watch is made for Eid by using Date and setinterval </p>
+                <button id="book" class="button"><a target="_blank" href="Stop Watch/index.html">Stop Watch</a></button>
+            </div>
 
-        <button id="book"><a target="_blank" href="chapter 6/index.html">chapter6</a></button>
+                <div class="firstAss cards" >
+                    <h3>Calculator</h3>
+                    <p>The Calculator is made by using javascript operators</p>
+                    <button id="book" class="button"><a target="_blank" href="calculator/index.html">Calculator</a></button>
+                </div>
 
-        <button id="book"><a target="_blank" href="chapter 7/index.html">chapter7</a></button>
-         
-        <button id="book"><a target="_blank" href="chapter 8/index.html">chapter8</a></button>
+            <div class="firstAss cards" >
+                    <h3>Finance App</h3>
+                    <p>The Finance App is made by using operators dom date functions</p>
+                    <button id="book" class="button"><a target="_blank" href="finance app/index.html">Finance App</a></button>
+            </div>
 
-        <button id="book"><a target="_blank" href="chapter 9/index.html">chapter9</a></button>
+            <div class="firstAss cards" >
+                <h3>Counter App</h3>
+                <p>The Couunter App is made by using dom setinterval input buttos and some other elements</p>
+                <button id="book" class="button"><a target="_blank" href="counter add/index.html">Counter App</a></button>
+            </div>
 
-        <button id="book"><a target="_blank" href="String Assignment/index.html">String Assignment</a></button>
-        
-        <button id="book"><a target="_blank" href="Number guess/index.html">Number Guess</a></button>
+            <div class="firstAss cards" >
+                <h3>Bulb</h3>
+                <p>The Bulb is made by using Adeventlistner input buttos and some other elements</p>
+                <button id="book" class="button"><a target="_blank" href="bulb/index.html">js Bulb</a></button>
+            </div>
 
-        <button id="book"><a target="_blank" href="Clock/index.html">Clock</a></button>
 
-        <button id="book"><a target="_blank" href="Coundown for Eid/index.html">Coundown</a></button>
-        
-        <button id="book"><a target="_blank" href="Quic Stop Game/index.html">QS Game</a></button>
-    
-        <button id="book"><a target="_blank" href="Stop Watch/index.html">Stop Watch</a></button>
-        
-        <button id="book"><a target="_blank" href="calculator/index.html">Calculator</a></button>
-        
-        <button id="book"><a target="_blank" href="finance app/index.html">Finance App</a></button>
+            <div class="firstAss cards" >
+                <h3>Text Editor</h3>
+                <p>The Text is made by using Adeventlistner input buttos some commands and some other elements</p>
+                <button id="book" class="button"><a target="_blank" href="Test/index.html">Text Editor</a></button>
+            </div>
 
-        <button id="book"><a target="_blank" href="counter add/index.html">Counter App</a></button>
 
-        <button id="book"><a target="_blank" href="bulb/index.html">js Bulb</a></button>
-        
-        <button id="book"><a target="_blank" href="Test/index.html">Text Editor</a></button>
-
-        <button id="book"><a target="_blank" href="table/index.html">Attendence Portal</a></button>
+            
+            <div class="firstAss cards" >
+                <h3>Text Editor</h3>
+                <p>The Attendence Portal is made by using Adeventlistner ParentNode</p>
+                <button id="book" class="button"><a target="_blank" href="table/index.html">Attendence Portal</a></button>
+            </div>
+    </div>
     </div>
 
 </body>
