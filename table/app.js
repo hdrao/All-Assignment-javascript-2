@@ -226,8 +226,6 @@ let presentButtons = document.querySelectorAll(".Present");
 presentButtons.forEach(button => {
   button.addEventListener("click", function() {
     this.style.backgroundColor = "green";
-    
-    
 
     let absentuserData = document.querySelector(".ppuserData");
         let parentElement = this.parentNode.parentNode;
@@ -248,7 +246,13 @@ presentButtons.forEach(button => {
         </tr>
         `
 
-
+        let buttons = this.parentNode.querySelectorAll("button");
+    buttons.forEach(button => {
+      if (button !== this) {
+        button.disabled = true;
+        button.closest("td").classList.add("disabled");
+      }
+    });
 
   });
 });
@@ -288,6 +292,13 @@ function leaveCount () {
         </tr>
         `
 
+        let buttons = this.parentNode.querySelectorAll("button");
+        buttons.forEach(button => {
+          if (button !== this) {
+            button.disabled = true;
+            button.closest("td").classList.add("disabled");
+          }
+        });
 
 
       });
@@ -327,6 +338,17 @@ function absentCount () {
         <td>${classofuser}</td>
         </tr>
         `
+
+
+        let buttons = this.parentNode.querySelectorAll("button");
+        buttons.forEach(button => {
+          if (button !== this) {
+            button.disabled = true;
+            button.closest("td").classList.add("disabled");
+          }
+        });
+
+
       });
     });
 
