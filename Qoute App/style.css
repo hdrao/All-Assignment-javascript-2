@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.qoute-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+
+.qoute-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 3px;
+}
+
+.qoute-text h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 2px;
+    word-wrap: wrap;
+}
+
+.qoute-author{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+.qoute-author h4 {
+    font-size: 10px;
+    font-weight: 500;
+    color: #000000;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    word-wrap: wrap;
+}
+
+.qoute-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.qoute-btn button { 
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: cadetblue;
+    cursor: pointer;
+}
