@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="main-section">
+        <div class="left-section">
+           
+
+            <div class="container  " id="login_container">
+                <div class="screen">
+                    <div class="screen__content">
+                        <div class="login">
+                            <div class="login__field">
+                                <i class="login__icon fas fa-user"></i>
+                                <input type="text" class="login__input" id="email" placeholder="User name / Email">
+                            </div>
+                            <div class="login__field">
+                                <i class="login__icon fas fa-lock"></i>
+                                <input type="password" id="password" class="login__input" placeholder="Password">
+                            </div>
+                            <button class="button login__submit" onclick="loginUser()">
+                                <span class="button__text">Log In Now</span>
+                                <i class="button__icon fas fa-chevron-right"></i>
+                            </button>				
+                        </div>
+                        <div class="social-login">
+                            <!-- <h3><button class="logout" id="logout">Log out</button></h3> -->
+                            <div class="social-icons">
+                                <a href="#" class="social-login__icon fab fa-instagram"></a>
+                                <a href="#" class="social-login__icon fab fa-facebook"></a>
+                                <a href="#" class="social-login__icon fab fa-twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__background">
+                        <span class="screen__background__shape screen__background__shape4"></span>
+                        <span class="screen__background__shape screen__background__shape3"></span>		
+                        <span class="screen__background__shape screen__background__shape2"></span>
+                        <span class="screen__background__shape screen__background__shape1"></span>
+                    </div>		
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="right-section" id="home_container">
+            <div class="hompage-container">
+               <div class="navbar">
+                <h2>Good Morning</h2>
+                <div class="logout">
+                    <h6 id="user_email">Home container</h6>
+                    <button id="logout" onclick="logout()">Log out</button>
+                </div>
+            </div>
+
+                <div class="maincontent">
+                <div class="contents">
+                    <input type="text" id="todoinput">
+                    <button onclick="addTodo()" id="btn">Add</button>
+                </div> 
+                <div class="list">
+                    <ul id="todolist">
+                        
+                    </ul>
+                </div>
+                </div>
+               
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
