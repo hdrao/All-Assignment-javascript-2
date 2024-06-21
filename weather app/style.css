@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color:steelblue;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.intro{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.input{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+
+.input > input {
+    height: 40px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: azure;
+    border: none;
+    padding: 10px;
+}
+
+.input > button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: azure;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+.weather-logo img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.weather-logo h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.weather-logo h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.weather-description {
+    display: flex;
+    align-items: center;   
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* i am adding extra margint to wind speed */
+.destwo{
+    margin-bottom: 40px;
+}
+
+.weather-points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.logo{
+    font-size: x-large;
+}
+
+.description{
+    font-size: large;
+    font: 1em sans-serif;
+    font-weight: 600;
+}
+
+
+
+.align-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+}
+
+.wind-hunidity{
+    font-size: large;
+    font: 1em sans-serif;
+    font-weight: 600;
+}
+
+
+
+.temprature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .weather{
+    display: none;
+} */
+
+
