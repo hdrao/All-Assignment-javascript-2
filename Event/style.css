@@ -1,0 +1,49 @@
+#logo{
+    font-size: xx-large;
+}
+
+#cardsimage{
+        height: 300px;
+        width: 300px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.container #div{
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    height: 600px;
+    overflow: auto;
+}
+
+#login_image{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons{
+    padding: 20px;
+    width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    color: darkred;
+    flex-wrap: wrap;
+}
+
+#addproducts{
+    display: none;
+}
