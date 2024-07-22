@@ -1,7 +1,7 @@
 let mainContainer = document.querySelector(".main-container");
 let submit = document.querySelector("#submit")
 let input = document.querySelector("#input")
-fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-06-21&sortBy=publishedAt&apiKey=21a4900741c546da838816bd5e7f9b41")
+fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-06-22&sortBy=publishedAt&apiKey=21a4900741c546da838816bd5e7f9b41")
 .then(response => response.json())
 .then(data => {
     data.articles.forEach(element => {
@@ -25,7 +25,7 @@ function fetchNews() {
   let searchTerm = input.value.trim();
   if (searchTerm !== "") {
     mainContainer.innerHTML = ""; // clear previous results
-    fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-06-21&sortBy=publishedAt&apiKey=21a4900741c546da838816bd5e7f9b41")
+    fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-06-22&sortBy=publishedAt&apiKey=21a4900741c546da838816bd5e7f9b41")
       .then(response => response.json())
       .then(data => {
         data.articles.forEach(element => {
