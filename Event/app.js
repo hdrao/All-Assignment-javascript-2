@@ -56,24 +56,25 @@ const addToCartButtons = document.querySelectorAll("#adCart");
    getDocs(productsCollectionRef).then((snapshot) => {
      snapshot.forEach((doc) => {
        const product = doc.data();
-       showAllproducts.innerHTML += `
-      
-       <div id="div" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-10">
-    <a href="#">
-        <img class="rounded-t-lg " style="width: 400px; height: 300px; object-fit: cover;"  src="${product.image}" alt="" />
-    </a>
-    <div class="p-5" id="paraa">
-
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${product.title}</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> ${product.description}.</p>
-        <h4 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><i>Price</i> = ${product.price}</h4>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        <button id="adCart">Add to Cart</button>
-        </a>
-    </div>
-</div>
-
-       `
+       showAllproducts.innerHTML += `  
+                  <div class="card">
+            <div class="card_image">
+                <img src="${product.image}" alt="">
+            </div>
+            <div class="card-details">
+            <div class="title">
+                <h1>${product.title}</h1>
+            </div>
+            <div class="description">
+                <p>${product.description}</p>
+            </div>
+            <div class="price">
+                <h3>${product.price}</h3>
+                <button id="adCart">Add Cart</button>
+            </div>
+            </div>
+        </div>
+        `
 
    });
 
@@ -87,11 +88,12 @@ const addToCartButtons = document.querySelectorAll("#adCart");
       button.innerText="Added";
       const parentEl =event.target.closest('#div'); // adjust the class name to match your HTML
       let prt=button.parentElement.parentElement.parentElement;
+      console.log(prt);
       const product = {
         image: prt.querySelector('img').src,
-        title: prt.querySelector('h5').innerText,
+        title: prt.querySelector('h1').innerText,
         description: prt.querySelector('p').innerText,
-        price: prt.querySelector('h4').innerText.split('=')[1]
+        price: prt.querySelector('h3').innerText,
       }
       const {image,title,description,price} = product;
       console.log(product);
@@ -106,9 +108,7 @@ const addToCartButtons = document.querySelectorAll("#adCart");
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${title}</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> ${description}.</p>
         <h4 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><i>Price</i> = ${price}</h4>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        <button id="adCart">Add to Cart</button>
-        </a>
+
     </div>
 </div>
 
@@ -129,6 +129,7 @@ const addToCartButtons = document.querySelectorAll("#adCart");
  your_cart.addEventListener("click",() => {
   cartItems.style.display="flex";
   showAllproducts.style.display="none";
+  addToCartButtons.disabled=true;
 })
 
 console.log(cartItems);
