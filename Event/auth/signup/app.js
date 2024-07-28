@@ -48,7 +48,7 @@ let signUp_btn_text = document.getElementById("btn");
              const userDBref = doc(db, "users", user.user.uid);
              setDoc(userDBref, userinfo).then(() => {
                  console.log("data inserted");
-                window.location.href="/";
+                window.location.href="/Event/auth/login/index.html";
                 signUp_btn_text.disabled=false;
                 signUp_btn_text.innerHTML="Submit";
              })

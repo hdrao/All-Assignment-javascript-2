@@ -16,7 +16,7 @@ login_btn.addEventListener("click", (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email.value, password.value).then (()=>{
         alert("login success")
-        window.location.href = "/index.html";
+        window.location.href = "/Event/index.html";
     }).catch((e)=>{
         alert(e)
     })
