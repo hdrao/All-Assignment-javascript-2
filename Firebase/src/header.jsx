@@ -13,6 +13,7 @@ import { useInsertionEffect } from 'react';
 import { redirect } from 'react-router';
 import Cart from './cart/Cart';
 import logo from './assets/logo.jpg'; // if assets is a sibling of header.jsx
+import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -132,7 +133,7 @@ const [img,setimg] = useState();
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <a href='/cart'>
+          <Link to={'/cart'}>
             <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -141,7 +142,7 @@ const [img,setimg] = useState();
               <span className="sr-only">View notifications</span>
               <ShoppingCartIcon aria-hidden="true" className="h-6 w-6" /> 
             </button>
-            </a>
+            </Link>
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
