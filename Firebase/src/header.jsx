@@ -181,18 +181,18 @@ const [img,setimg] = useState();
                 {
                 isOpen ? <button onClick={()=>handleimageopen(img)} className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                 Your Profile Picture
-              </button> : <a href="/signin" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+              </button> : <Link to={"/signin"}> <a href="/signin" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                 Signin
-              </a> 
+              </a></Link>
                 }
                 </MenuItem>
                 <MenuItem>
                 {
                   isOpen ? <a onClick={signout} href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                   Sign out
-                </a>: <a href="/signup" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                </a>: <Link to={"/signup"}> <a href="/signup" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                   Signup
-                </a>
+                </a> </Link>
                 }
                 </MenuItem>
               </MenuItems>
