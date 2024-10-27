@@ -83,7 +83,7 @@ const placeorder = (e) => {
   
   console.log("Placing order with data:", data); // Debugging log
   setorderData(data);
-  `navigate("/ordersummary")`
+  navigate("/ordersummary")
 }
 
 const setDataToLocalStorage = () => {
@@ -378,3 +378,5 @@ useEffect(() => {
 
 
 export default Checkoutprd
+
+
