@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from './CartContext';
-import { json } from 'react-router';
+import { json, Navigate } from 'react-router';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
@@ -79,6 +79,7 @@ const Cart = () => {
     setDisplayedCartItems([]); // Clear displayed items but keep the cart intact
     // Set a flag in local storage indicating the cart has been cleared
     localStorage.setItem('cartCleared', 'true');
+    Navigate('/checkoutprd')
   };
 
 
@@ -216,11 +217,11 @@ const Cart = () => {
         <p className="font-normal text-base leading-7 text-gray-500 text-center mb-5 mt-6">
           Shipping taxes, and discounts calculated at checkout
         </p>
-        <Link to={'/checkoutprd'}  >
+
          <button onClick={handleCheckout} className="rounded-full py-4 px-6 bg-indigo-600 text-white font-semibold text-lg w-full text-center transition-all duration-500 hover:bg-indigo-700">
           Checkout
         </button>
-        </Link>
+       
 
       </div>
     </div>
