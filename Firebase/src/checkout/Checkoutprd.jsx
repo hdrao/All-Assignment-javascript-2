@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect  } from "react"
 import { CartContext } from "../cart/CartContext";
 import { auth } from "../utills/auth";
+import { Navigate } from "react-router";
 
 
 
@@ -90,7 +91,7 @@ const setDataToLocalStorage = () => {
   
   if (userEmail && orderData) {
     localStorage.setItem(userEmail, JSON.stringify(orderData));
-    window.location.href='/ordersummary'
+    Navigate='/ordersummary'
   } else {
     console.log("userEmail or orderData is not defined."); // Debugging log
   }
