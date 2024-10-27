@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect  } from "react"
 import { CartContext } from "../cart/CartContext";
 import { auth } from "../utills/auth";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 
@@ -12,7 +12,7 @@ function Checkoutprd () {
     const { cart,setorderData,orderData} = useContext(CartContext);
     const [totalPrice,settotalPrice] = useState()
     const [userEmail, setUserEmail] = useState(null);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const [checkoutinput,setCheckoutinput] = useState({
       name:"",
@@ -83,7 +83,7 @@ const placeorder = (e) => {
   
   console.log("Placing order with data:", data); // Debugging log
   setorderData(data);
-  navigate("/ordersummary")
+  navigate('/ordersummary')
 }
 
 const setDataToLocalStorage = () => {
