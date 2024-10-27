@@ -185,9 +185,10 @@ const [img,setimg] = useState();
       </div>
 
       <DisclosurePanel className="sm:hidden">
-      <Link>
+      
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
+            <Link to={item.href}>
             <DisclosureButton
               key={item.name}
               as="a"
@@ -200,9 +201,10 @@ const [img,setimg] = useState();
             >
               {item.name}
             </DisclosureButton>
+            </Link>
           ))}
         </div>
-        </Link>
+
       </DisclosurePanel>
     </Disclosure>
     </>
