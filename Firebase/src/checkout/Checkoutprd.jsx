@@ -91,7 +91,7 @@ const setDataToLocalStorage = () => {
   
   if (userEmail && orderData) {
     localStorage.setItem(userEmail, JSON.stringify(orderData));
-    Navigate='/ordersummary'
+    Navigate('/ordersummary')
   } else {
     console.log("userEmail or orderData is not defined."); // Debugging log
   }
