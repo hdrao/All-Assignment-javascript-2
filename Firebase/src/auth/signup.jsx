@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Button, Form, Grid, Input, theme, Typography } from "antd";
-
+import { Link, useParams } from 'react-router-dom';
 import { LockOutlined, MailOutlined, UserOutlined } from "@ant-design/icons";
 import { auth,createUserWithEmailAndPassword,app,uploadBytes, storage, ref } from "../utills/auth";
 const { useToken } = theme;
 const { useBreakpoint } = Grid;
-const { Text, Title, Link } = Typography;
+const { Text, Title, } = Typography;
 
  function SignUpPage() {
     const [name, setName] = useState('');
@@ -154,7 +154,7 @@ createUserWithEmailAndPassword(auth, email, password)
             </Button>
             <div style={styles.signup}>
               <Text style={styles.text}>Already have an account?</Text>{" "}
-              <Link href="/signin">Sign in</Link>
+              <Link to={"/signin"}>Sign in</Link>
             </div>
           </Form.Item>
         </Form>
