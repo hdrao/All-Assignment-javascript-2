@@ -1,7 +1,8 @@
 import { useContext, useState, useEffect  } from "react"
 import { CartContext } from "../cart/CartContext";
 import { auth } from "../utills/auth";
-import { Navigate } from "react-router";
+import { Navigate, useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 
 
@@ -11,7 +12,7 @@ function Checkoutprd () {
     const { cart,setorderData,orderData} = useContext(CartContext);
     const [totalPrice,settotalPrice] = useState()
     const [userEmail, setUserEmail] = useState(null);
-
+    const navigate = useNavigate()
 
     const [checkoutinput,setCheckoutinput] = useState({
       name:"",
@@ -82,6 +83,7 @@ const placeorder = (e) => {
   
   console.log("Placing order with data:", data); // Debugging log
   setorderData(data);
+  navigate("/ordersummary")
 }
 
 const setDataToLocalStorage = () => {
@@ -91,7 +93,7 @@ const setDataToLocalStorage = () => {
   
   if (userEmail && orderData) {
     localStorage.setItem(userEmail, JSON.stringify(orderData));
-    Navigate('/ordersummary')
+    
   } else {
     console.log("userEmail or orderData is not defined."); // Debugging log
   }
@@ -315,6 +317,7 @@ useEffect(() => {
             >
               Confirm payment ${totalPrice}
             </button>
+            
           </div>
         </form>
       </div>
